@@ -8,7 +8,7 @@ A quick python scriptI wrote for work.
 ##    Inventory Changer            ##
 ##          v1.1                   ##
 ##                                 ##
-## Verion 1.1 Improvements:        ##
+## Version 1.1 Improvements:       ##
 ##   Fixed some mis-finds          ##
 ##     -specifically Remke         ##
 ##   Removed print statements      ##
