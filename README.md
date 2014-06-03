@@ -12,7 +12,7 @@ A quick python scriptI wrote for work.
 ##   Fixed some mis-finds          ##
 ##     -specifically Remke         ##
 ##   Removed print statements      ##
-##   Increased efficency           ##
+##   Increased efficiency          ##
 ## Future Improvements:            ##
 ##   Fix "mis-finds"               ##
 ##   Delete custom parts           ##
