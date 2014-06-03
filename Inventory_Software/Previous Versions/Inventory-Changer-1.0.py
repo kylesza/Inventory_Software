@@ -29,6 +29,7 @@ while open_file != "q" :
         new_file = open(new_file,'w')
         import csv
 
+
         def create_file(open_file):
             
             with open(open_file) as f:
@@ -353,12 +354,15 @@ while open_file != "q" :
                         new_file.write(s)
                     elif "MC-" in row[0]:
                         v = row[0]
+                        z = row[0]
                         v = v.split("-",1)[1]
-                        row[2] = "Multi-Contract USA"
-                        if "EA" in row[3]:
-                            row[3] = row[3].split(",")[-1]
-                        s = v + "," + row[1] + "," + row[2] + "," + row[3] + "\n"
-                        new_file.write(s)
+                        z = z.split("-",1)[0]
+                        if z == "MC" or z == "MCC": 
+                           row[2] = "Multi-Contract USA"
+                           if "EA" in row[3]:
+                               row[3] = row[3].split(",")[-1]
+                           s = v + "," + row[1] + "," + row[2] + "," + row[3] + "\n"
+                           new_file.write(s)
                     elif "MEN-" in row[0]:
                         v = row[0]
                         v = v.split("-",1)[1]
@@ -490,6 +494,14 @@ while open_file != "q" :
                             row[3] = row[3].split(",")[-1]
                         s = v + "," + row[1] + "," + row[2] + "," + row[3] + "\n"
                         new_file.write(s)
+                        # TRK is here just to stop mis-finds
+                    elif "TRK-" in row[0]:
+                        v = row[0]
+                        v = v.split("-",1)[1]
+                        row[2] = "Turck"
+                        s = v + "," + row[1] + "," + row[2] + "," + row[3] + "\n"
+                        new_file.write(s)
+                        #
                     elif "REI-" in row[0]:
                         v = row[0]
                         v = v.split("-",1)[1]
@@ -558,13 +570,6 @@ while open_file != "q" :
 
                         s = v + "," + row[1] + "," + row[2] + "," + row[3] + "\n"
                         new_file.write(s)
-                    elif "TRK-" in row[0]:
-                        v = row[0]
-                        v = v.split("-",1)[1]
-                        row[2] = "Turck"
-
-                        s = v + "," + row[1] + "," + row[2] + "," + row[3] + "\n"
-                        new_file.write(s)
                     elif "TS" in row[0]:
                         v = row[0]
                         v = v.split("-",1)[1]
@@ -573,17 +578,24 @@ while open_file != "q" :
                         new_file.write(s)
                     elif "R-" in row[0]:
                         v = row[0]
-                        row[2] = "Remke Industries"
-                        if "EA" in row[3]:
-                            row[3] = row[3].split(",")[-1]
-                        s = v + "," + row[1] + "," + row[2] + "," + row[3] + "\n"
-                        new_file.write(s)
+                        v = v.split("-",1)[0]
+                        print(v)
+                        if v == "R":
+                           print("yay!")
+                           row[2] = "Remke Industries"
+                           if "EA" in row[3]:
+                               row[3] = row[3].split(",")[-1]
+                           s = row[0] + "," + row[1] + "," + row[2] + "," + row[3] + "\n"
+                           new_file.write(s)
+
+
+         
    except:
-      print("\nFile Error, please try again\n")
+      print("\nFile Error, please try again111\n")
                 
    try:           
       create_file(open_file)
    except:
-      print("File Error, please try again\n")
-        
+      print("File Error, please try again22\n")
+   new_file.close()
    print("Review the new .csv. If a product name looks out of place, it is. Delete those.\n")
