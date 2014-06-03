@@ -1,7 +1,7 @@
 Inventory_Software
 ==================
 
-A quick python scriptI wrote for work. 
+A quick python script I wrote for work. 
 
 #####################################
 ##Empire Wire and Cable
