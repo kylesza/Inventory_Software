@@ -1,6 +1,9 @@
 #####################################
 ##  Empire Wire and Cable          ##
 ##    Inventory Changer            ##
+##           AKA                   ##
+##     I should have wrote         ##
+##     a function of this.         ##
 ##          v1.1                   ##
 ##                                 ##
 ## Version 1.1 Improvements:       ##
