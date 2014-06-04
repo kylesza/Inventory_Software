@@ -3,7 +3,7 @@
 ##    Inventory Changer            ##
 ##           AKA                   ##
 ##     I should have wrote         ##
-##     a function of this.         ##
+##     a function for this.        ##
 ##          v1.1                   ##
 ##                                 ##
 ## Version 1.1 Improvements:       ##
@@ -454,7 +454,7 @@ while open_file != "q" :
                         row[2] = "Thomas & Betts"
                         s = v + "," + row[1] + "," + row[2] + "," + row[3] + "\n"
                         new_file.write(s)
-                    elif "TS" in row[0]:
+                    elif "TS-" in row[0]:
                         v = row[0]
                         v = v.split("-",1)[1]
                         row[2] = ""
