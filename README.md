@@ -8,14 +8,11 @@ A quick python script I wrote for work.
 ##Inventory Changer
 AKA          
 " should have wrote a function for this."
-##          v1.1                   
+##          v1.2                   
 
-## Version 1.1 Improvements:       
-Fixed some mis-finds          
-  -specifically Remke         
-Removed print statements      
-Increased efficency           
+## Version 1.2 Improvements:       
+Fixed all mis-finds          
+      
 ## Future Improvements:            
-Fix "mis-finds"               
 Delete custom parts           
 #####################################
