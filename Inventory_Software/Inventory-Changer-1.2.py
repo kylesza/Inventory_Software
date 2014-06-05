@@ -27,7 +27,7 @@ open_file=0
 
 while open_file != "q" :
    try:    
-        open_file = input("Enter name of file to open (remeber extension) : ")
+        open_file = input("Enter name of file to open (remember extension) : ")
         print("\n")
         new_file = input("Enter name of new file : ")
         new_file = open(new_file,'w')
