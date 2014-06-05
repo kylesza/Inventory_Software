@@ -6,7 +6,7 @@
 ##     a function for this.        ##
 ##          v1.2                   ##
 ##                                 ##
-## Version 1.1 Improvements:       ##
+## Version 1.2 Improvements:       ##
 ##   Fixed all mis-finds           ##
 ##                                 ##
 ## Future Improvements:            ##
