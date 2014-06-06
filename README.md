@@ -8,11 +8,11 @@ A quick python script I wrote for work.
 ##Inventory Changer
 AKA          
 " should have wrote a function for this."
-##          v1.2                   
+##          v1.3                   
 
-## Version 1.2 Improvements:       
-Fixed all mis-finds          
+## Version 1.3 Improvements:       
+Deletes custom parts           
       
 ## Future Improvements:            
-Delete custom parts           
+GUI?          
 #####################################
