@@ -4,13 +4,13 @@
 ##           AKA                   ##
 ##     I should have wrote         ##
 ##     a function for this.        ##
-##          v1.2                   ##
+##          v1.3                   ##
 ##                                 ##
-## Version 1.2 Improvements:       ##
-##   Fixed all mis-finds           ##
+## Version 1.3 Improvements:       ##
+##   Deletes custom parts          ##
 ##                                 ##
 ## Future Improvements:            ##
-##   Delete custom parts           ##
+##        GUI?                     ##
 #####################################
 
 
@@ -677,11 +677,12 @@ while open_file != "q" :
 
          
    except :
-      print("\nFile Error, please try again111\n")
+      print("\nFile Error, please try again\n")
                 
    try:           
       create_file(open_file)
    except :
-      print("File Error, please try again22\n")
+      print("File Error, please try again\n")
    new_file.close()
-   print("Review the new .csv. If a product name looks out of place, it is. Delete those.\n")
+   print("Review the new .csv. If a product name looks out of place, it is. Delete those. BUT THAT \
+THAT SHOULDN'T HAPPEN ANYMORE!\n")
