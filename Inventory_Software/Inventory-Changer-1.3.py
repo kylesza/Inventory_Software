@@ -517,7 +517,8 @@ while open_file != "q" :
                         Z = row[0]
                         Z = Z.split("-")
                         if Z[-1] == "CUT" or Z[-1] == "FT" or Z[-1] == "V" or Z[-1] == "B" \
-                           or Z[-1] == "CC" or Z[-1] == "JJJ" or Z[-1] == "Q":
+                           or Z[-1] == "CC" or Z[-1] == "JJJ" or Z[-1] == "Q" or Z[-1] == "OOO"\
+                           or Z[-1] == "WWW":
                            pass
                         elif Z[0] == "PHX":                        
                            v = row[0]
