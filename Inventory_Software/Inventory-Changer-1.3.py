@@ -4,10 +4,10 @@
 ##           AKA                   ##
 ##     I should have wrote         ##
 ##     a function for this.        ##
-##          v1.3                   ##
+##          v1.31                  ##
 ##                                 ##
-## Version 1.3 Improvements:       ##
-##   Deletes custom parts          ##
+## Version 1.31 Improvements:      ##
+##      Phoenix Fix                ##
 ##                                 ##
 ## Future Improvements:            ##
 ##        GUI?                     ##
@@ -516,9 +516,7 @@ while open_file != "q" :
                     elif "PHX-" in row[0]:
                         Z = row[0]
                         Z = Z.split("-")
-                        if Z[-1] == "CUT" or Z[-1] == "FT" or Z[-1] == "V" or Z[-1] == "B" \
-                           or Z[-1] == "CC" or Z[-1] == "JJJ" or Z[-1] == "Q" or Z[-1] == "OOO"\
-                           or Z[-1] == "WWW":
+                        if Z[-1].isalpha() == True :
                            pass
                         elif Z[0] == "PHX":                        
                            v = row[0]
