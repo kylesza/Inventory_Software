@@ -14,24 +14,28 @@
 #####################################
 
 
-print("STEPS TO DO BEFORE RUNNING\n\n")
+print("STEPS TO DO BEFORE (and while) RUNNING\n\n")
 print("1. Sort Item# column by alphabetical order\n")
 print("2. Click on Quantity Column, change the format to Number  \n in the Number \
-tab on the top bar of excel. \n Then move the Decimal over 2 to the right 2 spots\n \
+tab on the top bar of excel. \n Then move the Decimal over 2 spots to the right\n \
 You also need to click on the description column, ctrl-f, \n and replace all ',' with \
-'-' \n")
-print("3. Save file as .csv and place it in the folder this program is in\n")
+'-' \n \
+(This removes excess commas in the .csv) \n")
+print("3. Save file as any name with a .csv at the end, and place it \n in the folder this program is in\n")
 print("4. Type 'q' for file name you want to open to end the program\n")
+print("5. Once the program is finished, open the new .csv and save it \n as YRMOD-EmpireInv (140320-EmpireInv) \
+and also change the file type \n to Excel 97-2003 Workbook")
+
 
 open_file=0
 
 while open_file != "q" :
 
-    open_file = input("Enter name of file to open (remember extension) : ")
+    open_file = input("\nEnter name of file to open (remember extension) : ")
     print("\n")
     if open_file == "q":
        quit()
-    new_file = input("Enter name of new file : ")
+    new_file = input("Enter name of new file (new is a good choice) : ")
     new_file = open(new_file,'w')
     import csv
 
