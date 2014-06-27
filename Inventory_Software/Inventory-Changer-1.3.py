@@ -4,10 +4,10 @@
 ##           AKA                   ##
 ##     I should have wrote         ##
 ##     a function for this.        ##
-##          v1.321                 ##
+##          v1.322                 ##
 ##                                 ##
-## Version 1.32 Improvements:      ##
-##      Fixes indentation          ##
+## Version 1.322 Improvements:     ##
+##      Fixes spelling errors      ##
 ##                                 ##
 ##    Future Improvements:         ##
 ##          GUI?                   ##
@@ -18,7 +18,7 @@ print("STEPS TO DO BEFORE RUNNING\n\n")
 print("1. Sort Item# column by alphabetical order\n")
 print("2. Click on Quantity Column, change the format to Number  \n in the Number \
 tab on the top bar of excel. \n Then move the Decimal over 2 to the right 2 spots\n \
-You also need to click on the Desciption column, ctrl-f, \n and replace all ',' with \
+You also need to click on the description column, ctrl-f, \n and replace all ',' with \
 '-' \n")
 print("3. Save file as .csv and place it in the folder this program is in\n")
 print("4. Type 'q' for file name you want to open to end the program\n")
@@ -674,8 +674,6 @@ while open_file != "q" :
                        s = row[0] + "," + row[1] + "," + row[2] + "," + row[9] + "\n"
                        new_file.write(s)
          
-  #except ValueError :
-   #  print("\nFile Error, please try gggagain\n")
                
     try:           
         create_file(open_file)
