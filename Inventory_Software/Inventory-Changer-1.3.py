@@ -19,10 +19,11 @@ print("1. Sort Item# column by alphabetical order\n")
 print("2. Click on Quantity Column, change the format to Number  \n in the Number \
 tab on the top bar of excel. \n Then move the Decimal over 2 spots to the right\n \
 You also need to click on the description column, ctrl-f, \n and replace all ',' with \
-'-' \n \
-(This removes excess commas in the .csv) \n")
+'-' \n(This removes excess commas in the .csv) \n")
 print("3. Save file as any name with a .csv at the end, and place it \n in the folder this program is in\n")
 print("4. Type 'q' for file name you want to open to end the program\n")
+print("4 and 3/4. Be sure to close the program before doing step 5! This is important\n as \
+the .csv will not be complete until the program is closed. \n")
 print("5. Once the program is finished, open the new .csv and save it \n as YRMOD-EmpireInv (140320-EmpireInv) \
 and also change the file type \n to Excel 97-2003 Workbook")
 
@@ -46,6 +47,8 @@ while open_file != "q" :
 
 
         def create_file(open_file):
+            "Reads the .csv file, then goes through it row by row to find certatin \
+perameters that change data sets. Only works with .csv files."
              
             with open(open_file) as f:
                 reader = csv.reader(f)
