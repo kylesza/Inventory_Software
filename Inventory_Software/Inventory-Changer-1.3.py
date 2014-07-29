@@ -47,8 +47,8 @@ while open_file != "q" :
 
 
         def create_file(open_file):
-            "Reads the .csv file, then goes through it row by row to find certatin \
-perameters that change data sets. Only works with .csv files."
+            "Reads the .csv file, then goes through it row by row to find certain \
+parameters that change data sets. Only works with .csv files."
              
             with open(open_file) as f:
                 reader = csv.reader(f)
