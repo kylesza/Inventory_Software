@@ -13,9 +13,6 @@
 ##            GUI?                 ##
 #####################################
 
-import sys
-sys.dont_write_bytecode = True
-
 
 print("STEPS TO DO BEFORE (and while) RUNNING\n\n")
 print("1. Sort Item# column by alphabetical order\n")
