@@ -4,7 +4,7 @@
 ##           AKA                   ##
 ##     I should have wrote         ##
 ##     a function for this.        ##
-##          v1.33                  ##
+##          v1.34                  ##
 ##                                 ##
 ##    Version 1.3 Improvements:    ##
 ##      Handles errors better      ##
@@ -12,6 +12,9 @@
 ##      Future Improvements:       ##
 ##            GUI?                 ##
 #####################################
+
+import sys
+sys.dont_write_bytecode = True
 
 
 print("STEPS TO DO BEFORE (and while) RUNNING\n\n")
